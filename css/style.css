@@ -1,0 +1,505 @@
+@font-face {
+    src: url("../fonts/Bahnschrift.ttf");
+    font-family: Bahnschrift;
+
+}
+body, html{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+.header{
+    position: relative;
+    padding: 47px 50px 230px 176px;
+    /*background: url("../img/Video.jpg");*/
+    background-size: cover;
+}
+.header__bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    left: 0px;
+    top:0px;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+.logo__img{
+    width: 284px;
+    height: 256px;
+}
+.menu{
+    width: auto;
+}
+.menu__items{
+    display: flex;
+    list-style: none;
+    background-color: rgba(0,0,0,.36);
+    margin: 0;
+    padding: 0px 48px 0px 84px;
+
+}
+.menu__item{
+    padding: 18px 25px;
+    position: relative;
+    cursor: pointer;
+}
+.menu__item-link{
+    color: rgba(255,255,255,.4);
+    font-family: Bahnschrift, sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 48px;
+    text-decoration: none;
+}
+.yellow__label{
+    display: none;
+}
+.menu__item:hover .yellow__label{
+    width: 100%;
+    height: 131px;
+    position: absolute;
+    bottom: 0;
+    display: block;
+    background-color: rgba(229,223,0,.66);
+    left: 0;
+    z-index: -1;
+}
+.header__title{
+    color: #000000;
+    font-family: Bahnschrift, sans-serif;
+    font-size: 65px;
+    font-weight: 600;
+    max-width: 962px;
+    width: 100%;
+    margin-bottom: 56px;
+}
+.header__description{
+    color: rgba(0,0,0,.6);
+    font-family: Bahnschrift, sans-serif;
+    font-size: 39px;
+    font-weight: 400;
+    max-width: 769px;
+    width: 100%;
+    display: block;
+    margin-bottom: 70px;
+}
+.header__btn{
+    color: #ffffff;
+    font-family: Calibri, sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    border-radius: 43px;
+    background-color: rgba(229,223,0, .95);
+    border: none;
+    padding: 32px 76px;
+    line-height: 21px;
+}
+.main{
+    padding: 32px 213px;
+}
+.main__title{
+    color: #000000;
+    font-family: Bahnschrift, sans-serif;
+    font-size: 64px;
+    font-weight: 600;
+    margin-bottom: 46px;
+    line-height: 55px;
+    text-align: center;
+}
+.main__cards{
+    display: inline-block;
+}
+
+.main__card{
+    max-width: 446px;
+
+}
+.main__card-img{
+    margin: 0 auto;
+    margin-bottom: 32px;
+display: block;
+}
+.main__card-title{
+    display: block;
+    color: #000000;
+    font-family: Bahnschrift,sans-serif;
+    font-size: 34px;
+    font-weight: 600;
+
+    text-align: center;
+}
+.main__card-description{
+    color: #535353;
+    font-family: Bahnschrift, sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 60px;
+}
+.price{
+    padding: 32px 213px;
+    margin-bottom: 56px;
+}
+.price__container{
+    background: url("../img/yellow-bg.png");
+    padding: 50px 18px 40px 18px;
+}
+.price__header{
+    color: #000000;
+    font-family: 'Bahnschrift', sans-serif;
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 70px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.price__item{
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.16);
+    border-radius: 20px;
+    background-color: #ffffff;
+    padding: 24px 18px;
+    min-height: 558px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.price__item-header{
+    text-align: center;
+    color: #000000;
+    font-family: 'Bahnschrift', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 75px;
+    display: block;
+}
+.price__item-list{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+.price__item-list li{
+    color: #535353;
+    font-family: 'Bahnschrift', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 50px
+
+
+}
+.price__item-list li:before{
+    content: "\2022";
+    color:  #ede956;
+}
+.price__item-cost{
+    color: #000000;
+    font-family: Bahnschrift, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 50px;
+    text-align: center;
+}
+.mt-60{
+    margin-top: 60px;
+}
+.mb-85{
+    margin-bottom: 85px;
+}
+.persons{
+    padding: 0px 140px;
+    margin-bottom: 50px;
+}
+.persons__title{
+    color: #000000;
+    font-family: Bahnschrift, sans-serif;
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 1;
+    text-align: center;
+    display: block;
+}
+.persons__list{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    margin-top: 85px;
+    grid-column-gap: 16px;
+}
+.persons__item{
+    display: flex;
+    flex-direction: column;
+}
+.persons__photo{
+    max-width: 189px;
+    margin: 0 auto;
+    height: auto;
+}
+.persons__item-name{
+    color: #000000;
+    font-family: Bahnschrift, sans-serif;
+    font-size: 29px;
+    font-weight: 600;
+    line-height: 1;
+    text-align: center;
+    margin-bottom:8px ;
+
+}
+.persons__item-desctription{
+    color: #535353;
+    font-family: Bahnschrift, sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 55px;
+}
+.cases__title{
+    color: #000000;
+    font-family: Bahnschrift;
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 55px;
+    text-align: center;
+    display: block;
+}
+.cases__slider-block{
+    max-height: 931px;
+    max-width: 1640px;
+    width: 100%;
+    height: auto;
+    background: url('../img/26-layers.png');
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    padding-bottom: 158px;
+    margin-bottom: 185px;
+}
+.stats{
+    padding: 0px 135px;
+    margin-bottom: 150px;
+}
+.stats__header{
+    border-radius: 30px;
+    background-color: #f9f35b;
+    padding: 10px 65px;
+    color: #656565;
+    font-family: Bahnschrift, sans-serif;
+    font-size: 29px;
+    font-weight: 400;
+    line-height: 25px;
+    display: inline-block;
+    margin: 0 auto;
+    width: auto;
+    text-decoration: none;
+    margin-bottom: 26px;
+
+}
+.stats__title{
+    color: #000000;
+    font-family: Bahnschrift, sans-serif;
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 48px;
+    text-align: center;
+    display: inherit;
+    margin-bottom: 97px;
+}
+.stats__content{
+    background: linear-gradient(to left, #faf65c 0%, #e8c747 100%);
+    padding: 120px 53px;
+}
+.stats__content-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.stats__content-item-general{
+    color: #ffffff;
+    font-family: Bahnschrift,sans-serif;
+    font-size: 188px;
+    font-weight: 600;
+    line-height: 168px;
+}
+.stats__content-item-description{
+    color: #656565;
+    font-family: Bahnschrift,sans-serif;
+    font-size: 37px;
+    font-weight: 600;
+    line-height: 32px;
+}
+.about-us{
+
+    padding: 0px 140px;
+    margin-bottom: 250px;
+}
+.about-us__container{
+    background: url("../img/tablet.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.about-us__title{
+    color: #000000;
+    font-family: Bahnschrift,sans-serif;
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 181px;
+}
+.about-us__logo{
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 60px;
+}
+.about-us__content{
+    max-width: 600px;
+    color: #3f3e3e;
+    font-family: Bahnschrift, sans-serif;
+    font-size: 37px;
+    font-weight: 600;
+    line-height: 40px;
+    margin: 0 auto;
+    margin-bottom: 190px;
+}
+.feedback{
+    padding: 97px 141px 59px 104px;
+    background: url("../img/popup.png");
+    background-repeat: no-repeat;
+    max-width: 1640px;
+    margin: 0 auto;
+    background-size: cover;
+    margin-bottom: 250px;
+}
+.feedback__title{
+    color: #535353;
+    font-family: Bahnschrift, sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 52px;
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin-bottom: 112px;
+}
+.feedback__input{
+    border-radius: 50px;
+    border: 1px solid #707070;
+    background-color: rgba(255,255,255,.75);
+    padding: 23px 32px 26px 115px;
+    color: #535353;
+    font-family: Bahnschrift, sans-serif;
+    font-size: 43px;
+    font-weight: 400;
+    line-height: 46px;
+}
+.mb-60{
+    margin-bottom: 60px;
+}
+#phone+label, #name+label,#popup_phone+label, #popup_name+label {
+    position: relative;
+}
+#phone+label img, #name+label img,#popup_phone+label img, #popup_name+label img{
+    position: absolute;
+    left: 35px;
+    top: -70px;
+}
+.feedback__btn{
+    border-radius: 49px;
+    background-color: #ff0000;
+    padding: 28px 35px;
+    color: #ffffff;
+    font-family: Bahnschrift, sans-serif;
+    font-size: 37px;
+    font-weight: 600;
+    line-height: 40px;
+    margin: 0 auto;
+    display: block;
+    border: none;
+}
+
+.footer{
+    padding: 0 140px 0px 140px;
+    background-color: #000000;
+}
+.footer__info{
+    padding-top: 21px;
+}
+.footer__info-list{
+    list-style: none;
+    padding: 0;
+}
+.footer__info-item{
+    color: #ffffff;
+    font-family: Bahnschrift, sans-serif;
+    font-size: 37px;
+    font-weight: 400;
+    line-height: 45px;
+}
+.footer__contact-phone{
+    display: flex;
+    align-items: center;
+}
+.footer__contact-phone-label{
+    border-radius:  0 0 10px 10px;
+    background-image: linear-gradient(to top, #e5df00 0%, #737000 100%);
+    padding: 56px 21px;
+    width: fit-content;
+}
+.footer__contact-earth-label{
+    border-radius:  0 0 10px 10px;
+    padding: 21px 6px;
+    width: fit-content;
+}
+
+.contact__item-list{
+    color: #ffffff;
+    font-family: Bahnschrift, sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 30px;
+    text-decoration: none;
+}
+.footer__socials{
+    display: flex;
+}
+.footer__socials-labels{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px 10px 0 0;
+    background-image: linear-gradient(180deg, #e5df00 0%, #737000 100%);
+    width: fit-content;
+    padding: 54px 11px 11px 11px;
+
+}
+.footer__socials-contact-email{
+    color: #ffffff;
+    font-family: Bahnschrift, sans-serif;
+    font-size: 37px;
+    font-weight: 400;
+    line-height: 45px;
+    margin-top: 50px;
+    margin-left: 36px;
+}
+.footer__socials-contact-instagram{
+    color: #ffffff;
+    font-family: Bahnschrift, sans-serif;
+    font-size: 37px;
+    font-weight: 400;
+    line-height: 45px;
+}
+.popup{
+    display: none;
+}
+.popup.open{
+    display: block;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    margin-top: 250px;
+}
+.popup .feedback{
+    border-radius: 100px;
+    position: relative;
+}
+.mt-54{
+    margin-top: 54px;
+}
