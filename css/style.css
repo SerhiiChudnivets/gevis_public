@@ -15,6 +15,7 @@ body, html{
     background-size: cover;
 }
 .header__bg{
+    object-fit: cover;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -502,4 +503,292 @@ display: block;
 }
 .mt-54{
     margin-top: 54px;
+}
+.slider__wrapper{
+    width: 1263px;
+    height: 781px;
+    margin: 0 auto;
+    padding-top: 75px;
+}
+
+@media (min-width: 1024px) and (max-width: 1919px) {
+    .logo__img {
+        width: 221px;
+        height: 199px;
+    }
+
+    .menu__item-link {
+        font-size: 16px;
+        line-height: 27px;
+    }
+
+    .menu__item {
+        padding: 16px;
+    }
+
+    .navigation {
+        margin-bottom: 42px;
+    }
+
+    .header {
+        padding-top: 30px;
+        padding-bottom: 165px;
+    }
+
+    .header__title {
+        margin-top: 0px;
+        margin-bottom: 48px;
+    }
+
+    .header__description {
+        font-size: 21px;
+        font-weight: 400;
+        max-width: 414px;
+    }
+
+    .header__btn {
+        font-size: 15px;
+        line-height: 26px;
+        padding: 22px 72px;
+    }
+
+    .main {
+        padding: 32px 150px;
+    }
+
+    .main__title {
+        margin-top: 5px;
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 89px;
+    }
+
+    .main__card-img {
+        width: 207px;
+        height: 156px;
+    }
+
+    .main__card-title {
+        font-size: 17px;
+        font-weight: 600;
+    }
+
+    .main__card-description {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 40px;
+    }
+    .price{
+        padding: 32px 174px ;
+        margin-bottom: 68px;
+    }
+    .price__header{
+        font-size: 34px;
+        font-weight: 600;
+        line-height: 37px;
+    }
+    .price__item{
+     padding: 24px 8px;
+        min-height: 334px;
+        height: 100%;
+    }
+    .price__item-header{
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 35px;
+    }
+    .price__item-list li{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 33px;
+    }
+    .feedback__btn{
+        padding: 17px 63px;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 19px;
+    }
+    .persons__title{
+        font-size: 29px;
+        font-weight: 600;
+        line-height: 27px;
+    }
+    .persons__list{
+        margin-top: 50px;
+    }
+    .persons__photo{
+     max-width: 111px;
+    }
+    .persons__item-name{
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 65px;
+    }
+    .persons__item-desctription{
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 45px;
+    }
+    .stats__content-item-general{
+        font-size: 106px;
+        font-weight: 600;
+        line-height: 95px;
+    }
+    .stats__content-item-description{
+        font-size: 17px;
+        font-weight: 600;
+        line-height: 14px;
+    }
+    .stats{
+        padding: 0px 150px;
+        margin-bottom: 63px;
+    }
+    .stats__title{
+        font-size: 29px;
+        font-weight: 600;
+        line-height: 26px;
+        margin-bottom: 45px;
+    }
+    .stats__content{
+        padding: 75px 42px;
+    }
+
+
+    .about-us{
+        padding: 0px 140px;
+        margin-bottom: 250px;
+    }
+    .about-us__container{
+        width: 1200px;
+        position: relative;
+        left: calc(50% - 600px);
+        overflow: hidden;
+        background: url('../img/tablet.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .about-us__title{
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 18px;
+        margin-bottom: 25px;
+        margin-top: 180px;
+    }
+    .about-us__logo{
+        width: 136px;
+        height: auto;
+        margin-bottom: 8px;
+    }
+    .about-us__content{
+        font-size: 19px;
+        font-weight: 600;
+        line-height: 40px;
+        max-width: 420px;
+        color: #3f3e3e;
+        margin: 0 auto;
+        margin-bottom: 86px;
+        margin-left: calc(50% - 188px);
+    }
+    .slider__wrapper{
+        width: 922px;
+        height: 649px;
+        margin: 0 auto;
+        padding-top: 75px;
+        margin-top: 90px;
+    }
+    .feedback{
+        max-width: 1132px;
+        border-radius: 107px;
+        padding: 53px 60px 22px 60px;
+    }
+    .feedback__title{
+        color: #535353;
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 28px;
+    }
+    .feedback__input{
+        max-width: 365px;
+        width: 100%;
+        color: #535353;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 24px;
+        padding: 19px 24px 12px 60px;
+    }
+    .mb-60{
+        margin-bottom: 34px;
+    }
+    .feedback__btn{
+        font-size: 23px;
+        font-weight: 600;
+        line-height: 26px;
+        padding: 26px 81px 31px 81px;
+    }
+    .cases__slider-block{
+        width: 1200px;
+        position: relative;
+        left: calc(50% - 600px);
+        overflow: hidden;
+        /* background: url(../img/26-layers.png); */
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 1000px;
+        display: block;
+        margin: 0;
+    }
+    #phone+label img, #name+label img, #popup_phone+label img, #popup_name+label img{
+        left: -340px;
+        top: -6px;
+        width: 17px;
+        height: 22px;
+    }
+
+    .footer__info img{
+        width: 241px;
+    }
+    .footer__info-item{
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 25px;
+    }
+    .footer__contact-phone-label{
+        padding-top: 41px;
+        padding-bottom: 36px;
+        padding-right: 17px;
+        padding-left: 17px;
+    }
+    .footer__contact-phone-label img{
+        width: 24px;
+    }
+    .footer__contact-earth-label{
+     padding: 21px 9px;
+    }
+    .footer__contact-earth-label img{
+        width: 42px;
+    }
+    .footer__socials-labels{
+        padding-top: 32px;
+    }
+    .footer__socials-labels img:first-child{
+        width: 38px !important;
+        height: auto !important;
+        margin-bottom: 26px !important;
+    }
+    .footer__socials-labels img:nth-child(2){
+        width: 38px !important;
+        height: auto !important;
+        margin-bottom: 22px !important;
+    }
+    .footer__socials-labels img:nth-child(3){
+        margin: 0 auto !important;
+        width: 25px !important;
+        height: auto !important;
+    }
+    .footer__socials-contact-email{
+        margin-top: 19px;
+        font-size: 32px;
+    }
 }
