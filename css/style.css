@@ -840,6 +840,8 @@ display: block;
     background: url('../img/left__arrow.png');
     background-repeat: no-repeat;
     background-size: cover;
+    z-index: 9;
+
 }
 .slick-next{
     right: 32px;
@@ -848,6 +850,7 @@ display: block;
     background: url('../img/right__arrow.png');
     background-repeat: no-repeat;
     background-size: cover;
+    z-index: 9;
 }
 .slick-prev:before,  .slick-next:before {
     content: '';
