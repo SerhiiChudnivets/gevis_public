@@ -14,11 +14,11 @@
 <body>
 <div class="popup">
     <div class="feedback">
-        <img src="img/close.png" alt="" style="position: absolute;width: 42px; height:32px;top:37px; right: 65px;" class="close__btn">
+        <img src="img/close.png" alt="" class="popup__close-btn close__btn" >
         <form action="">
             <span class="feedback__title">ЗАПОЛНИТЕ ФОРМУ И МЫ ВАМ СРАЗУ ЖЕ ПЕРЕЗВОНИМ</span>
             <div class="row mb-60">
-                <div class="col-5">
+                <div class="col-lg-5  col-12">
 
                     <input type="text" class="feedback__input " placeholder="ФИО" name="name" id="popup_name">
                     <label for="name">
@@ -27,7 +27,7 @@
                 </div>
             </div>
             <div class="row mb-85">
-                <div class="col-5">
+                <div class="col-lg-5  col-12">
                     <input type="text" class="feedback__input" placeholder="Номер телефона" name="phone" id="popup_phone">
                     <label for="phone">
                         <img src="img/phone.png" alt="">
@@ -37,16 +37,45 @@
             </div>
             <div class="row">
                 <div class="col-12">
-                    <button class="feedback__btn open-popup">ОСТАВИТЬ ЗАЯВКУ</button>
+                    <button class="feedback__btn popup__send">ОСТАВИТЬ ЗАЯВКУ</button>
                 </div>
             </div>
         </form>
     </div>
 </div>
+<section class="mobile__menu">
+    <div class="mobile__menu-close">
+        <img src="img/2-layers.png" class="mobile__menu-close-img" alt="">
+    </div>
+    <div class="mobile__menu-logo">
+        <img src="img/for__mobile.png" class="mobile__menu-logo-img">
+
+    </div>
+    <div class="mobile__menu-items">
+        <li class="mobile__menu-item">
+            <a href="#service" class="mobile__menu-link">Услуги</a>
+        </li>
+        <li class="mobile__menu-item">
+            <a href="#price" class="mobile__menu-link">Прайс</a>
+        </li>
+        <li class="mobile__menu-item">
+            <a href="#case" class="mobile__menu-link">Кейсы</a>
+        </li>
+        <li class="mobile__menu-item">
+            <a href="#stats" class="mobile__menu-link">Цифры</a>
+        </li>
+
+    </div>
+</section>
 <header class="header">
     <video width="100%" height="auto" preload="auto" autoplay="autoplay"  loop="loop" poster="img/Video.jpg" class="header__bg">
         <source src="img/meet.mp4" type="video/mp4">
     </video>
+    <div class="burger">
+        <div class="burger__lines"></div>
+        <div class="burger__lines middle__line"></div>
+        <div class="burger__lines"></div>
+    </div>
     <div class="navigation">
         <img class="logo__img" src="img/LOGO_gevis_main.png">
         <div class="menu">
@@ -82,7 +111,63 @@
 </header>
 <section class="main" id="service">
     <h2 class="main__title">НАШИ УСЛУГИ</h2>
-    <div class="row">
+    <div class="slider__laptop slider__mobile">
+        <div class="main__card">
+            <img class="main__card-img" src="img/first.svg">
+            <span class="main__card-title">SEO-оптимизация
+</span>
+            <p class="main__card-description">Проведение полного цикла работ, направленного на улучшение видимости
+                сайта в органическом поиске.
+            </p>
+        </div>
+        <div class="main__card">
+            <img class="main__card-img" src="img/second.svg">
+            <span class="main__card-title">Копирайтинг
+</span>
+            <p class="main__card-description">Хороший текст — это половина успеха. Наши копирайтеры пишут
+                эффективные тексты, которые привлекают внимание потенциальных клиентов.
+            </p>
+        </div>
+        <div class="main__card">
+            <img class="main__card-img" src="img/third.svg">
+            <span class="main__card-title">Разработка дизайна
+
+</span>
+            <p class="main__card-description">К каждому клиенту индивидуальный подход. Мы создаем рекламные афиши,
+                логотипы и брендбуки. Разрабатываем фирменный стиль, а также оформляем страницы в соцсетях.
+            </p>
+        </div>
+        <div class="main__card">
+            <img class="main__card-img" src="img/fourth.svg">
+            <span class="main__card-title">Фотоконтент
+</span>
+            <p class="main__card-description">Проводим фотосессии, обеспечиваем качественным фотоконтентом для
+                создания красивых страниц в социальных сетях.
+            </p>
+        </div>
+        <div class="main__card">
+            <img class="main__card-img" src="img/fifth.svg">
+            <span class="main__card-title">Контекстная реклама
+
+</span>
+            <p class="main__card-description">Создадим мгновенный поток целевого трафика с Google/Яндекс.Ваш сайт
+                посетят только заинтересованные в Вашей услуге/товаре люди.
+
+
+            </p>
+        </div>
+        <div class="main__card">
+            <img class="main__card-img" src="img/sixth.svg">
+            <span class="main__card-title">SMM продвижение
+
+</span>
+            <p class="main__card-description">Сформируем положительный имидж и наладим продажи товаров и услуг в
+                самых популярных социальных сетях (Facebook, Instagram, VK).
+            </p>
+        </div>
+
+    </div>
+    <div class="row main__cards">
         <div class="col-4">
             <div class="main__card">
                 <img class="main__card-img" src="img/first.svg">
@@ -158,7 +243,7 @@
             ПРАЙС
         </div>
         <div class="row">
-            <div class="col-4">
+            <div class="col-md-4 col-12">
                 <div class="price__item">
                     <div>
 
@@ -180,7 +265,7 @@
                     <div class="price__item-cost"> от 7500 грн в месяц</div>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-md-4 col-12">
                 <div class="price__item">
                     <div>
 
@@ -210,7 +295,7 @@
                 </div>
 
             </div>
-            <div class="col-4">
+            <div class="col-md-4 col-12">
                 <div class="price__item">
                     <div>
 
@@ -242,7 +327,7 @@
             </div>
         </div>
         <div class="row mt-60">
-            <div class="col-4">
+            <div class="col-md-4 col-12">
                 <div class="price__item">
                     <div>
 
@@ -270,7 +355,7 @@
                     <div class="price__item-cost">от 8000 грн/месяц</div>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-md-4 col-12">
                 <div class="price__item">
                     <div>
 
@@ -296,7 +381,7 @@
                 </div>
 
             </div>
-            <div class="col-4">
+            <div class="col-md-4 col-12">
                 <div class="price__item">
                     <div>
 
@@ -471,7 +556,7 @@
     <form action="">
     <span class="feedback__title">ЗАПОЛНИТЕ ФОРМУ И МЫ ВАМ СРАЗУ ЖЕ ПЕРЕЗВОНИМ</span>
     <div class="row mb-60">
-        <div class="col-5">
+        <div class="col-md-5 col-12">
 
             <input type="text" class="feedback__input " placeholder="ФИО" name="name" id="name">
             <label for="name">
@@ -480,7 +565,7 @@
         </div>
     </div>
         <div class="row mb-85">
-            <div class="col-5">
+            <div class="col-md-5 col-12">
                 <input type="text" class="feedback__input" placeholder="Номер телефона" name="phone" id="phone">
                 <label for="phone">
                     <img src="img/phone.png" alt="">
@@ -490,7 +575,7 @@
         </div>
         <div class="row">
             <div class="col-12">
-                <button class="feedback__btn">ОСТАВИТЬ ЗАЯВКУ</button>
+                <button class="feedback__btn done">ОСТАВИТЬ ЗАЯВКУ</button>
             </div>
         </div>
     </form>
@@ -532,10 +617,7 @@
                     <div class="footer__contact-phone-numbers">
                         <ul class="contact__list">
                             <li class="contact__item">
-                                <a href="" class="contact__item-list" style="color: #ffffff;
-font-size: 37px;
-font-weight: 400;
-line-height: 45px;">geviss.com.ua</a>
+                                <a href="" class="contact__item-list website" style="">geviss.com.ua</a>
                             </li>
 
                         </ul>
@@ -545,9 +627,9 @@ line-height: 45px;">geviss.com.ua</a>
             </div>
             <div class="footer__socials">
      <div class="footer__socials-labels">
-         <img src="img/list.png" style="width: 58px; height: 42px; margin: 0 auto;margin-bottom: 41px;" alt="">
-         <img src="img/instagram.png" style="width: 58px; height: 58px; margin: 0 auto;margin-bottom: 34px;" alt="">
-         <img src="img/facebook.png" style="width: 36px;height: 68px;margin: 0 auto;" alt="">
+         <img src="img/list.png" class="list" style="" alt="">
+         <img src="img/instagram.png" class="instagram" style="" alt="">
+         <img src="img/facebook.png" class="facebook" style="" alt="">
      </div>
                 <div class="footer__socials-contacts">
                     <div class="footer__socials-contact">
