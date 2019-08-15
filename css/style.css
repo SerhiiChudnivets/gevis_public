@@ -40,7 +40,7 @@ body, html{
     list-style: none;
     background-color: rgba(0,0,0,.36);
     margin: 0;
-    padding: 0px 48px 0px 84px;
+    padding: 0px 5px 0px 5px;
 
 }
 .menu__item{
@@ -833,7 +833,26 @@ display: block;
         font-size: 32px;
     }
 }
-@media (max-width: 767px){
+.slick-prev{
+    left: 32px;
+    width: 26px;
+    height: 43px;
+    background: url('../img/left__arrow.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slick-next{
+    right: 32px;
+    width: 26px;
+    height: 43px;
+    background: url('../img/right__arrow.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slick-prev:before,  .slick-next:before {
+    content: '';
+}
+@media (max-width: 1024px){
     .header{
         padding: 42px 44px 165px 44px;
     }
@@ -1197,5 +1216,8 @@ display: block;
     }
     .slick-prev:before,  .slick-next:before {
         content: '';
+    }
+    .main__card{
+        max-width: 100%;
     }
 }
